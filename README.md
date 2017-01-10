@@ -1,1 +1,1 @@
-# GoPractice
+# Python Practice
