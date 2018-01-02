@@ -22,3 +22,6 @@ db.sqlite3
 
 #env
 env/
+
+# pycharm
+.idea/
