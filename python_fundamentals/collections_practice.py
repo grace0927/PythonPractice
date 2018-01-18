@@ -5,6 +5,7 @@ def print_title(title):
     half_banner = '*'*10
     print(half_banner + title + half_banner)
 
+
 def tuple_practice():
     print_title('tuple')
 
@@ -21,6 +22,7 @@ def tuple_practice():
 
     print(4 in t)
 
+
 def str_practice():
     print_title('str')
 
@@ -31,6 +33,7 @@ def str_practice():
 
     hello, _, world = m.partition(' ')
     print('{hello}, {world}'.format(hello=hello, world=world))
+
 
 def range_practice():
     print_title('range')
@@ -48,6 +51,7 @@ def range_practice():
 
     for k, v in enumerate(t):
         print("k={}, v={}".format(k, v))
+
 
 def list_practice():
     print_title('list')
@@ -69,6 +73,7 @@ def list_practice():
     print(k == v)
     k[0].append(1)
     print(v)
+
 
 def dict_practice():
     print_title('dict')
@@ -99,6 +104,7 @@ def dict_practice():
     print('Look' in nba)
     pp(nba)
 
+
 def set_practice():
     print_title('set')
 
@@ -122,6 +128,7 @@ def set_practice():
     print(taxes_team.issubset(west_team))
     print(west_team.issuperset(west_team))
     print(ca_team.isdisjoint(taxes_team))
+
 
 tuple_practice()
 str_practice()

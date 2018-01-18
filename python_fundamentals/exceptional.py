@@ -14,9 +14,11 @@ def convert(s):
             file=sys.stderr)
         raise
 
+
 def string_log(s):
     x = convert(s)
     return log(x)
+
 
 def make_at(path, dir_name):
     original_path = os.getcwd()
@@ -33,5 +35,6 @@ def make_at(path, dir_name):
 # convert("33")
 # convert("hello world")
 # convert([1, 4])
+
 
 string_log("cat")

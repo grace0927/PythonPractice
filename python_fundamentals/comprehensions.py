@@ -12,8 +12,10 @@ def list_exec():
     print(length)
     print([len(str(factorial(x))) for x in range(20)])
 
+
 def set_exec():
     print({len(str(factorial(x))) for x in range(20)})
+
 
 def dict_exec():
     nba_team_to_city = {'Pacer': 'Indiana',
@@ -28,12 +30,36 @@ def dict_exec():
                   for p in glob.glob('*.py')}
     pp(file_sizes)
 
+
 def filter_exec():
     primes = [x for x in range(101) if is_prime(x)]
     print(primes)
     prime_square_divisors = {x*x:(1, x, x*x) for x in range(101)
                              if is_prime(x)}
     pp(prime_square_divisors)
+
+
+def iterable_exec():
+    iterable = ['Spring', 'Summer', 'Fall', 'Winter']
+    iterator = iter(iterable)
+    print(next(iterator))
+    print(next(iterator))
+    print(next(iterator))
+    print(next(iterator))
+
+
+def first(iterable):
+    iterator = iter(iterable)
+    try:
+        return next(iterator)
+    except StopIteration:
+        raise ValueError("Iterable is empty")
+
+
+def first_exec():
+    first(["hello", "winter"])
+    first(set())
+
 
 def is_prime(x):
     if x < 2:
@@ -43,7 +69,10 @@ def is_prime(x):
             return False
     return True
 
+
 list_exec()
 set_exec()
 dict_exec()
 filter_exec()
+iterable_exec()
+first_exec()

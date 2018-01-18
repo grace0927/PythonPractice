@@ -3,7 +3,8 @@
 try:
     import msvcrt
 
-    def getkey():
+
+    def get_key():
         """ Wait for a keypress and return a single character string"""
         return msvcrt.getch()
 
@@ -13,7 +14,8 @@ except ImportError:
     import tty
     import termios
 
-    def getkey():
+
+    def get_key():
         """ Wait for a keypress and return a single character string"""
         fd = sys.stdin.fileno()
         original_attributes = termios.tcgetattr(fd)
