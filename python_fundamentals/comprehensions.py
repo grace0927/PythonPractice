@@ -69,10 +69,10 @@ def is_prime(x):
             return False
     return True
 
-
-list_exec()
-set_exec()
-dict_exec()
-filter_exec()
-iterable_exec()
-first_exec()
+if __name__ == "__main__":
+    list_exec()
+    set_exec()
+    dict_exec()
+    filter_exec()
+    iterable_exec()
+    first_exec()
