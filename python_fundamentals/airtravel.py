@@ -125,7 +125,7 @@ class Aircraft:
         return len(rows) * len(row_seats)
 
 
-""" late-binding & duck-type implementation & super-class include only shared implementation """
+""" late-binding & duck-type implementation & base-class include only shared implementation """
 class AirbusA319(Aircraft):
 
     def model(self):
