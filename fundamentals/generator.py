@@ -1,7 +1,7 @@
 from itertools import count, islice
 
 
-from python_fundamentals.comprehensions import is_prime
+from fundamentals.comprehensions import is_prime
 
 
 def gen123():
