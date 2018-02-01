@@ -1,6 +1,7 @@
 import os
 
-from beyond_the_basics.reader.compressed import gzipped, bzipped
+from .compressed import gzipped
+from .compressed import bzipped
 
 extension_map = {
     '.bz2': bzipped.opener,

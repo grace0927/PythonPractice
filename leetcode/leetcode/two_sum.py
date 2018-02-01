@@ -1,5 +1,5 @@
 class TwoSum:
-    def run(self, nums, target):
+    def __call__(self, nums, target):
         """
         :type nums: List[int]
         :type target: int

@@ -22,7 +22,7 @@ class TwoSumTests(unittest.TestCase):
 
     def test_function_runs(self):
         for case in test_cases:
-            self.assertEqual(self.solver.run(case['nums'], case['target']), case['expected'])
+            self.assertEqual(self.solver(case['nums'], case['target']), case['expected'])
 
 
 if __name__ == '__main__':
