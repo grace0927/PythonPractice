@@ -16,6 +16,11 @@ class Tracker:
     def filter_price(self, html):
         return 0
 
+    def check_price(self):
+        self.fetch_html()
+        self.filter_price()
+        return self.get_price()
+
     def get_html(self):
         return self._html
 
